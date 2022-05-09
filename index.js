@@ -50,13 +50,6 @@ async function run() {
         res.send("saved to db: " + data);
       });
     });
-
-    const result = await productCollection.updateOne(
-      filter,
-      updateDoc,
-      options
-    );
-    res.send(result);
   } finally {
   }
 }
